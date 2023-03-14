@@ -1,0 +1,64 @@
+// .item {
+//   background: red;
+//   padding: 10px;
+//   display: flex;
+//   justify-content: space-between;
+// }
+// .item:nth-child(even) button {
+//     order: 1;
+// }
+// .item:nth-child(even) div {
+//     order: 2;
+// }
+
+.points-section {
+    display: flex;
+   flex-direction: column ;
+   justify-content: center;
+   gap: 60px;
+
+    &__list {
+        display: flex;
+        gap: 35px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-bottom: 57px;
+        align-items: center;
+        @include desktop-small {
+            justify-content: center;
+        }
+
+    }
+
+    &__img {
+    }
+
+    &__info {
+        max-width: 560px;
+      
+    }
+
+    &__title {
+        @include text($ff, 700, 4.2rem, 5.5rem, $white);
+        margin-bottom: 30px;
+        @include mobile {
+            @include text($ff, 700, 2.8rem, 4.2rem, $white);
+            text-align: center
+        }
+
+
+    }
+
+    &__desc {
+        @include text($ff, 400, 1.6rem, 2.6rem, $white);
+        margin-bottom: 30px;
+    }
+}
+.point-section {
+
+    &__button {
+    }
+}
+.btn {
+}
+
